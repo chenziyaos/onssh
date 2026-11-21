@@ -1,0 +1,7 @@
+# Minified third-party code trips the generic-api-key rule (e.g. "t.Sequencer=t.Throttler=void").
+[extend]
+useDefault = true
+
+[allowlist]
+description = "vendored third-party assets"
+paths = ['''^onssh/static/vendor/''']
