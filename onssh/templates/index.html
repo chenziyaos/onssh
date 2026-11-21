@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>onssh</title>
+    <link rel="icon" href="{{ static_url('favicon.ico') }}">
+    <link rel="stylesheet" href="{{ static_url('vendor/xterm/xterm.css') }}">
+    <link rel="stylesheet" href="{{ static_url('main.css') }}">
+</head>
+<body>
+<header>onssh</header>
+<main>
+    <form id="login" autocomplete="on">
+        <label>Host <input name="host" required placeholder="server.example.com" autocomplete="on"></label>
+        <label>Port <input name="port" type="number" min="1" max="65535" value="22" required></label>
+        <label>Username <input name="username" required autocomplete="username"></label>
+        <label>Password <input name="password" type="password" autocomplete="current-password"></label>
+        <label class="inline"><input name="remember" type="checkbox"> Remember host, port and username</label>
+        <button type="submit">Connect</button>
+    </form>
+    <div id="term" hidden></div>
+</main>
+<script src="{{ static_url('vendor/xterm/xterm.js') }}"></script>
+<script src="{{ static_url('vendor/xterm/addon-fit.js') }}"></script>
+<script src="{{ static_url('main.js') }}"></script>
+</body>
+</html>
