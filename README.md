@@ -9,7 +9,7 @@
 需要 Python 3.10 或更新版本。
 
 ```bash
-git clone https://github.com/chenziyaos/onssh.git && cd onssh
+git clone https://github.com/zyaochen/onssh.git && cd onssh
 uv run onssh                      # 或：pip install . && onssh
 # 打开 http://127.0.0.1:8000/
 ```
